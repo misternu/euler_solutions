@@ -1,4 +1,4 @@
-require_relative '../solution'
+require_relative '../functions'
 
 describe 'Solution' do
   describe '#primes' do
@@ -8,7 +8,7 @@ describe 'Solution' do
   end
 
   describe '#prime_factors' do
-    xit 'returns the prime factors of a number' do
+    it 'returns the prime factors of a number' do
       expect(prime_factors(13195)).to eq [5, 7, 13, 29]
     end
     it 'returns the correct solution' do

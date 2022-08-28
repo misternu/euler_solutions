@@ -1,4 +1,4 @@
-require_relative '../solution'
+require_relative '../functions'
 
 describe 'Solution' do
   describe '#solution' do

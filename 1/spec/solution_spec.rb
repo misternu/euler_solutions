@@ -1,4 +1,4 @@
-require_relative '../solution'
+require_relative '../functions'
 
 RSpec.describe 'Solution' do
   describe '#reduce_three_and_five' do
