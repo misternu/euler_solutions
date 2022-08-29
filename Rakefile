@@ -24,3 +24,13 @@ task :spec do
   end
   sh "rspec #{config['directory']}/spec"
 end
+
+desc "change the number in the spec"
+task :number, [:number] do |t, args|
+  unless File.exists?("#{args["number"]}/solution.rb")
+    sh "mkdir #{args[:number]}; touch #{args["number"]}/solution.rb"
+  end
+  File.open('.euler_config.yml', 'w') do |file|
+    file.write("directory: #{args[:number]}\nruby: solution.rb")
+  end
+end
