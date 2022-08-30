@@ -20,3 +20,5 @@ def math_three_and_five(n)
   multiples_sum(5, n-1) - # multiples of 5 minus
   multiples_sum(15, n-1) # multiples of 15 (duplicates)
 end
+
+# File kept from an old solution, see also benchmark.rb for a comparison between solutions

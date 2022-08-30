@@ -1,5 +1,5 @@
 require 'benchmark'
-require_relative 'solution'
+require_relative 'functions'
 
 # much larger number, for the sake of benchmarking
 n = 10000000
