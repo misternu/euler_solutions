@@ -7,4 +7,4 @@ def solve(n)
     .sum
 end
 
-p solve(4_000_000)
+p solve(4e6)

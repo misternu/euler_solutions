@@ -24,4 +24,12 @@ RSpec.describe EulerMath do
       end
     end
   end
+
+  describe 'Prime' do
+    describe '#primes' do
+      it 'enumerates prime numbers' do
+        expect(primes.take(10)).to eq [2,3,5,7,11,13,17,19,23,29]
+      end
+    end
+  end
 end
